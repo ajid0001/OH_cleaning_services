@@ -17,6 +17,9 @@ const Header = ({ navTitle = "Ottawa Hybrid Cleaning Service" }) => {
           <Link href="/" className="mr-4">
             Home
           </Link>
+          <Link href="/booking" className="mr-4">
+            Get a Quote
+          </Link>
           <Link href="/services" className="mr-4">
             Services
           </Link>
