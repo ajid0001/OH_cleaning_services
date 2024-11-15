@@ -28,11 +28,12 @@ const ServicesPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-blue-500 text-white p-4">
+      {/* <header className="bg-blue-500 text-white p-4">
         <nav className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Our Services</h1>
         </nav>
-      </header>
+      </header> */}
+      <Header navTitle="Our Services" />
 
       <section className="container mx-auto py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

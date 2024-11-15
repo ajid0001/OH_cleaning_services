@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Footer from "../components/footer";
+import Header from "../components/header";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -22,11 +23,7 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-blue-500 text-white p-4">
-        <nav className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Contact Us</h1>
-        </nav>
-      </header>
+      <Header navTitle="Contact Us" />
 
       <section className="container mx-auto py-16">
         <form
@@ -93,9 +90,6 @@ const ContactPage = () => {
         </form>
       </section>
 
-      {/* <footer className="bg-blue-500 text-white py-4 text-center">
-        <p>&copy; 2024 Cleaning Service. All rights reserved.</p>
-      </footer> */}
       <Footer />
     </div>
   );
