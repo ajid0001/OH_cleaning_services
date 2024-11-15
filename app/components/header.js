@@ -4,7 +4,7 @@ const Header = ({ navTitle = "Ottawa Hybrid Cleaning Service" }) => {
   return (
     <header className="bg-blue-500 text-white p-4">
       <nav className="container mx-auto flex flex-wrap items-center justify-between">
-        <div className="flex items-center space-x-2 mb-2 md:mb-0">
+        <div className="flex items-center mb-2 md:mb-0">
           <Link href="/" className="text-2xl font-bold">
             {/* Logo */}
           </Link>
@@ -13,7 +13,7 @@ const Header = ({ navTitle = "Ottawa Hybrid Cleaning Service" }) => {
           </Link>
         </div>
 
-        <div className="flex flex-wrap space-x-4 text-center">
+        <div className="flex flex-wrap space-x-8 text-center">
           <Link href="/" className="mr-4">
             Home
           </Link>
