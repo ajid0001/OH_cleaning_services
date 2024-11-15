@@ -4,8 +4,11 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Modal from "../components/modal";
 
 const BookingPage = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const [formData, setFormData] = useState({
     service: "",
     date: "",
@@ -49,7 +52,8 @@ const BookingPage = () => {
       )
       .then(
         (response) => {
-          alert("Booking confirmed, we will contact you soon!");
+          setShowModal(true);
+
           setFormData({
             service: "",
             date: "",
@@ -67,11 +71,6 @@ const BookingPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* <header className="bg-blue-500 text-white p-4">
-        <nav className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Book a Service</h1>
-        </nav>
-      </header> */}
       <Header navTitle="Book a Service" />
 
       <section className="container mx-auto py-16">
@@ -192,12 +191,16 @@ const BookingPage = () => {
           </button>
         </form>
       </section>
-      {/* 
-      <footer className="bg-blue-500 text-white py-4 text-center">
-        <p>&copy; 2024 Cleaning Service. All rights reserved.</p>
-      </footer> */}
 
       <Footer />
+
+      {showModal && (
+        <Modal
+          message1="Thank you!"
+          message2="Booking confirmed, we will contact you soon!"
+          onClose={() => setShowModal(false)}
+        />
+      )}
     </div>
   );
 };
