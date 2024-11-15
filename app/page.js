@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Header from "./components/header";
 import Image from "next/image";
-import myImage from "./assets/banner.jpg";
+import myImage from "../public/assets/banner.jpg";
 import Footer from "./components/footer";
 import { FaCalendarAlt, FaBroom, FaSmile } from "react-icons/fa";
 import InfoCard from "./components/card";
