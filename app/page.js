@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Header from "./components/header";
 import Image from "next/image";
 import myImage from "../public/assets/banner.jpg";
@@ -11,13 +10,9 @@ import InfoCard from "./components/card";
 const Homepage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Header */}
       <Header />
 
-      {/* Hero Section */}
       <section className="text-center py-32 bg-blue-200 relative">
-        {" "}
-        {/* Increased padding */}
         <Image
           src={myImage}
           alt="Description"
@@ -65,10 +60,9 @@ const Homepage = () => {
         </div>
         <p className="mt-8 text-center text-gray-700 max-w-2xl mx-auto">
           We make cleaning easy! Just book a service, let us handle the
-          cleaning, and enjoy a fresh space. It’s that simple.
+          cleaning, and enjoy a fresh space. It's that simple.
         </p>
       </section>
-      {/* Footer */}
       <Footer />
     </div>
   );
